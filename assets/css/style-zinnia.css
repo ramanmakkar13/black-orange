@@ -6837,7 +6837,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
 @media (max-width: 1199px) { .section-lg-mxw-t-0 { padding-top: 0; }
   .section-lg-mxw-b-0 { padding-bottom: 0; } }
 
-[class*="section"].pt-0, [class*="section"].pdt-0 { padding-top: 0 !important; }
+[class*="section"].pt-0, [class*="section"].pdt-0 { padding-top: 1px !important; }
 
 [class*="section"].pb-0, [class*="section"].pdb-0 { padding-bottom: 0 !important; }
 
@@ -7211,16 +7211,25 @@ section#tokensale {
   font-size: 16px;
 }
 
-img#img-height {
+/* img#img-height {
   height: 400px !important;
-}
+} */
 
 section#roadmap {
   background: black !important;
 }
 
-
-
+.nk-ovm:before, .nk-ovm:after {
+  bottom: 0px;
+  left: 0px;
+}
+section#wallet::before {
+  content: '';
+  position: absolute;
+  background: #fe4350;
+  width: 100%;
+  height: 50%;
+}
 /* upper */
 /* .token-countdown-wrapper.split.split-left.split-md-left {
   background: #341010;
@@ -7245,6 +7254,43 @@ label {
   background-color: #fff0;
   border-color: #ff6940 #ff6741 #ff6342;
 }
-section#why {
+section#Key features {
   background: #f3f1f1 !important;
 } */
+
+section#Key\ features {
+  background: #ffedee66 !important;
+}
+.token-status {
+  padding: 116px 28px 20px;
+}
+img.img-fluid.card-img-to {
+  width: 100px;
+  margin: auto;
+}
+
+.bg-theme-light {
+  background-color: #fff8f8 !important;
+}
+
+section#wallets::before {
+  content: '';
+  position: absolute;
+  background: #fe4350;
+  width: 100%;
+  height: 100%;
+}
+
+section#Ecosystem {
+  background: #ffe9ea7a !important;
+}
+section#documents {
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
+}
+.section {
+  position: relative;
+  overflow-x: visible;
+  width: 100%;
+  z-index: 2;
+}
