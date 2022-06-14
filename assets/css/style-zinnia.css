@@ -84,7 +84,17 @@ p:last-child { margin-bottom: 0; }
 
 p + [class*=btn] { margin-top: 15px; }
 
-@media (min-width: 576px) { p { font-size: 15px; } }
+@media (min-width: 576px) { p { font-size: 15px; } 
+
+/* .bg-remove {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 2px 18px 0px rgb(141 140 140 / 30%);
+  padding: 15px;
+  height: 351px;
+  text-align: center;
+} */
+}
 
 ul, ol, table { margin: 0; padding: 0; }
 
@@ -3842,6 +3852,10 @@ ul.progress-info { display: flex; justify-content: space-between; }
 .card-s3 { box-shadow: 0px 5px 18px rgba(65, 80, 118, 0.2); }
 
 @media (min-width: 576px) { .card { padding: 30px; }
+
+div#card-1 {
+  height: 370px;
+}
   .card.card-s3 { padding: 30px; }
   .card-md { padding: 40px 30px; }
   .card-lg { padding: 45px 40px; }
@@ -6811,7 +6825,14 @@ ul.progress-info { display: flex; justify-content: space-between; }
   .section-t, .section { padding-top: 90px; }
   .section-b, .section { padding-bottom: 90px; }
   .section-t-m, .section-m { padding-top: 90px !important; }
-  .section-b-m, .section-m { padding-bottom: 90px !important; } }
+  .section-b-m, .section-m { padding-bottom: 90px !important; } 
+  section#about {
+    height: 540px;
+}
+
+}
+
+
 
 @media (min-width: 992px) { .section-connect:before { height: 160px; }
   .section-t, .section { padding-top: 120px; }
@@ -7293,4 +7314,8 @@ section#documents {
   overflow-x: visible;
   width: 100%;
   z-index: 2;
+}
+
+section#wallet {
+  padding-top: 20px;
 }
