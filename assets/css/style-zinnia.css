@@ -58,7 +58,10 @@
 /** 02.01 Reset */
 html, body { overflow-x:hidden;font-family: "Poppins", sans-serif; color: #415076; font-size: 14px; line-height: 1.86; font-weight: 300; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; position: relative; }
 
-@media (min-width: 576px) { html, body { font-size: 16px; line-height: 1.86; font-weight: 300; } }
+@media (min-width: 576px) { html, body { font-size: 16px; line-height: 1.86; font-weight: 300; }
+.spacer {
+  height: 0px;
+} }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section { display: block; }
 
@@ -94,6 +97,10 @@ p + [class*=btn] { margin-top: 15px; }
   height: 351px;
   text-align: center;
 } */
+.spacer{
+  height:150px;
+}
+
 }
 
 ul, ol, table { margin: 0; padding: 0; }
@@ -1446,7 +1453,11 @@ hr { position: relative; z-index: 5; }
 
 .banner-shade-3 { border-radius: 0 0 80px 0; background-image: linear-gradient(to top left, #fff 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%); }
 
-@media (max-width: 1400px) { .banner-rounded-bg { right: 330px; } }
+@media (max-width: 1400px) { .banner-rounded-bg { right: 330px; } 
+
+
+
+}
 
 .nk-pages-angled .section { z-index: inherit; }
 
@@ -2084,7 +2095,12 @@ hr { position: relative; z-index: 5; }
   .link { font-size: 14px; }
   .link-xs { font-size: 12px; }
   .link-break { flex-direction: row; }
-  .link-break .icon-circle { margin-left: 0; margin-bottom: 0; } }
+  .link-break .icon-circle { margin-left: 0; margin-bottom: 0; }
+
+  .has-mask .banner {
+    padding-bottom: 350px;
+  }
+}
 
 /** 03.03 Title */
 .title { position: relative; font-size: 1.75rem; }
@@ -7322,4 +7338,20 @@ section#wallet {
 
 section#wallets {
   background: #000000;
+}
+p.animated.fadeInUp {
+    text-align: left;
+}
+p.lead.animated.fadeInUp {
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+
+  .is-transparent .banner-fs {
+    min-height: 70vh;
+}
+ul.list.list-check.animated.fadeInUp {
+  text-align: left;
+}
 }
